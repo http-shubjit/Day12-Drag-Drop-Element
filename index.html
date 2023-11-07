@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Element</title>
+    <script src="https://kit.fontawesome.com/ad618d076d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <span class="text">Draggable Elment 1</span>
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+        <div class="item">
+            <span class="text">Draggable Elment 2</span>
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+        <div class="item">
+            <span class="text">Draggable Elment 3</span>
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+        <div class="item">
+            <span class="text">Draggable Elment 4</span>
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+        <div class="item">
+            <span class="text">Draggable Elment 5</span>
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+    </div>
+    <script>
+        const dragarea=document.querySelector(".wrapper")
+        new Sortable(dragarea,{
+            animation:150,
+        })
+    </script>
+</body>
+</html>
